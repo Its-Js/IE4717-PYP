@@ -1,0 +1,61 @@
+html {
+  width: 100%;
+  min-width: 1000px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  margin: 0;
+  border: solid 5px #006666;
+}
+
+.topbannerarea {
+  height: 30px;
+  background-color: #006666;
+}
+
+.horizontalnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 24px;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.promotions {
+  height: 60px;
+}
+
+.columnns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.leftcolumn {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+
+.rightcolumn {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div>
+      <form action="">
+        <h1>Eco-Travels Booking System: Registration Form</h1>
+
+        Name <br />
+        <input type="text" id="name" onchange="verifyName()" />
+        <br />
+        <br />
+
+        Password <br />
+        <input type="password" id="password" pattern="" /> <br /><br />
+
+        Email <br />
+        <input type="email" id="email" pattern="" /> <br /><br />
+
+        Telephone Number <br />
+        <input type="text" id="contact" pattern="\d{2}\.*\d{8}" />
+        <br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script>
+      function verifyName() {
+        var name = document.getElementById("name").value;
+        var checkgeneralformat = /^[a-z ]+[a-z -]*[a-z ]+$/i;
+        var checkdash = /^(?=.*-)/;
+        var checkdashformat = /^[a-zA-Z]+(?=-)+/;
+
+        if (checkgeneralformat.test(name)) {
+          if (checkdash.test(name)) {
+            if (checkdashformat.test(name)) {
+              alert("name entered correctly");
+            } else {
+              alert("name entered wrongly");
+            }
+          } else {
+            alert("name entered correctly");
+          }
+        } else {
+          alert("name entered wrongly");
+        }
+      }
+    </script>
+  </body>
+</html>

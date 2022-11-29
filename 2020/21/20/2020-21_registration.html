@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div>
+      <form action="">
+        <table>
+          <th>
+            <h1>20/21 Form</h1>
+          </th>
+          <tr>
+            <td>User Name</td>
+            <td>
+              <input
+                type="text"
+                name="username"
+                pattern="[a-z|A-Z]+[\w .-]*[a-z|A-Z]+"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                pattern="[A-Z]+[\d]+[\W]+.{9,}"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" pattern="" /></td>
+          </tr>
+          <tr>
+            <td>Identification Number</td>
+            <td><input type="number" name="idnumber" pattern="" /></td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script></script>
+  </body>
+</html>
