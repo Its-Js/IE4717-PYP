@@ -20,8 +20,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8px;
 }
+
 .topbannerarea {
   height: 30px;
   background-color: #006666;
