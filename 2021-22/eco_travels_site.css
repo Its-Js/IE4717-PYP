@@ -1,7 +1,6 @@
 html {
   width: 100%;
   min-width: 1000px;
-  padding: 0;
   display: flex;
   justify-content: center;
 }
@@ -11,10 +10,18 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 95%;
-  margin: 0;
   border: solid 5px #006666;
+  color: #008080;
+  font-family: Arial, sans-serif;
+  background-color: white;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+}
 .topbannerarea {
   height: 30px;
   background-color: #006666;
@@ -38,6 +45,7 @@ body {
   flex-direction: row;
   gap: 8px;
 }
+
 .promotions {
   height: 60px;
 }
@@ -54,8 +62,43 @@ body {
   width: 380px;
 }
 
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 .rightcolumn {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 600px;
+  border: solid black 1px;
+}
+
+.content {
+}
+
+.content-image {
+  width: 190px;
+  height: 140px;
+}
+
+.content-text {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  text-align: center;
+  color: #333333;
+  background-color: #66ffff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #006666;
+  font-size: small;
+}
+
+.fdr {
+  display: flex;
+  flex-direction: row;
 }
